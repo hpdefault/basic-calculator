@@ -11,22 +11,24 @@
         <input id="display" readonly>
         <div id="keys">
             <button onclick="appendToDisplay('+')" class="operator">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('7'); appendToDisplay2('7');" id="arrNumber">7</button>
+            <button onclick="appendToDisplay('8'); appendToDisplay2('8');" id="arrNumber">8</button>
+            <button onclick="appendToDisplay('9'); appendToDisplay2('9')" id="arrNumber">9</button>
             <button onclick="appendToDisplay('-')" class="operator">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('4'); appendToDisplay2('4')" id="arrNumber">4</button>
+            <button onclick="appendToDisplay('5'); appendToDisplay2('5')" id="arrNumber">5</button>
+            <button onclick="appendToDisplay('6'); appendToDisplay2('6')" id="arrNumber">6</button>
             <button onclick="appendToDisplay('*')" class="operator">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('1'); appendToDisplay2('1')" id="arrNumber">1</button>
+            <button onclick="appendToDisplay('2'); appendToDisplay2('2')" id="arrNumber">2</button>
+            <button onclick="appendToDisplay('3'); appendToDisplay2('3')" id="arrNumber">3</button>
             <button onclick="appendToDisplay('/')" class="operator">/</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button onclick="clearDisplay()" class="operator">C</button>
+            <h3 id="BasicArray" style="color: white;"></h3>
+            <button onclick="sumArray()" style="font-size: 15px;">Sum Array</button>
         </div>
     </div>
     <script src="calculate.js"></script>
