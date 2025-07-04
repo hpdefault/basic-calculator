@@ -9,6 +9,15 @@
 <body>
     <div id="calculator">
         <input id="display" readonly>
+        <div style="margin-bottom: 10px;">
+            <label for="arrayMode" style="color:white">Array Mode:</label>
+            <select id="arrayMode" onchange="switchMode()">
+                <option value="1">1 Array</option>
+                <option value="2">2 Arrays</option>
+            </select>
+            <span id="activeArrayLabel" style="color:white; margin-left:10px;">Using: Array 1</span>
+            <button onclick="toggleActiveArray()" id="toggleArrayBtn" style="display: none; font-size: 13px;">Switch Array</button>
+        </div>
         <div id="keys">
             <button onclick="appendToDisplay('+')" class="operator">+</button>
             <button onclick="appendToDisplay('7'); appendToDisplay2('7');" id="arrNumber">7</button>
@@ -30,6 +39,8 @@
             <h3 id="BasicArray" style="color: white;"></h3>
             <button onclick="sumArray()" style="font-size: 15px;">Sum Array</button>
         </div>
+        <div id="selectionArea" style="margin-top: 10px; color: white;"></div>
+        <button onclick="sumSelected()" style="font-size: 15px; margin-top: 5px;">Sum Selected</button>
     </div>
     <script src="calculate.js"></script>
 </body>
